@@ -1,0 +1,71 @@
+body {
+    font-family: 'Open Sans', sans-serif;;
+    align-items: center;
+}
+
+.container {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+}
+
+
+.sobre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 1rem;
+    padding: 2rem; 
+}
+
+.imagem_prato {
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.tilapia, .parmediana, .bife {
+    border: 2px black solid;
+    border-radius: 10px;
+    margin-right: 2rem;
+    padding: 10px;
+    width: 450px;
+    height: 450px;
+}
+
+
+@media screen and (max-width:600px) {
+
+    .sobre{ 
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .tilapia, .parmediana, .bife {
+        margin-top: 10px;
+        width: 250px;
+    }
+
+    .imagem_prato {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
